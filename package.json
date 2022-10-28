@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "@mui/material": "^5.10.11",
+    "@react-page/editor": "^5.1.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
