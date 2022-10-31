@@ -1,0 +1,9 @@
+#app-navbar {
+  a.active {
+    font-weight: bold;
+
+    >* {
+      font-weight: bold;
+    }
+  }
+}
