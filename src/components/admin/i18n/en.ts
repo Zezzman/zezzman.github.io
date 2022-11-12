@@ -1,4 +1,4 @@
-import englishMessages from 'ra-language-english';
+// import englishMessages from 'ra-language-english';
 
 export const messages = {
     simple: {
@@ -8,7 +8,7 @@ export const messages = {
         },
         'create-post': 'New post',
     },
-    ...englishMessages,
+    // ...englishMessages,
     resources: {
         posts: {
             name: 'Post |||| Posts',

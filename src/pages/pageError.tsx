@@ -2,10 +2,11 @@ import Container from "@mui/material/Container";
 import Paper from "@mui/material/Paper";
 import Navbar from "../components/navbar";
 
-const FrontPage = () => {
+const PageError = (props: any) => {
+  const { children } = props;
   return (<>
     <Navbar />
-    <Container id="frontPage">
+    <Container id="errorPage">
       <Paper variant="outlined"
         sx={{
           mt: 3,
@@ -15,10 +16,13 @@ const FrontPage = () => {
           borderRadius: 0
         }}
       >
-        Front page
+        {children ? children : (<>
+          <h1>Something went wrong</h1>
+          <p>Sorry, but an error has occurred.</p>
+        </>)}
       </Paper>
     </Container>
   </>);
 }
 
-export default FrontPage;
+export default PageError;

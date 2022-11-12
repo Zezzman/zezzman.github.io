@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { useGetList } from 'react-admin';
+const useGetList: any = () => { }
 
 const CustomRouteNoLayout = ({ title = 'Posts' }) => {
     const { isLoading, total } = useGetList('posts', {

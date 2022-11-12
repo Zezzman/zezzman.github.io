@@ -1,5 +1,5 @@
 import data from './data';
-import addUploadFeature from './addUploadFeature';
+// import addUploadFeature from './addUploadFeature';
 import RestProvider from '../../libraries/restProvider';
 
 interface DataProvider { }
@@ -55,9 +55,9 @@ const addTagsSearchSupport = (dataProvider: DataProvider & any) => ({
     },
 });
 
-const uploadCapableDataProvider = addUploadFeature(
+const uploadCapableDataProvider = {} as any/* addUploadFeature(
     addTagsSearchSupport(dataProvider)
-);
+); */
 
 const sometimesFailsDataProvider = new Proxy(uploadCapableDataProvider, {
     get: (target, name) => (resource: any, params: any) => {

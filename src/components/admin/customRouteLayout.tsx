@@ -1,12 +1,9 @@
 import * as React from 'react';
-import {
-    useGetList,
-    useAuthenticated,
-    Datagrid,
-    TextField,
-    Title,
-} from 'react-admin';
-
+const useGetList: any = () => { }
+const useAuthenticated: any = () => { }
+const Datagrid: any = () => { }
+const TextField: any = () => { }
+const Title: any = () => { }
 const sort = { field: 'published_at', order: 'DESC' };
 
 const CustomRouteLayout = ({ title = 'Posts' }) => {

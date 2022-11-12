@@ -4,7 +4,6 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Link } from 'react-admin';
 import { Button } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 
@@ -30,9 +29,9 @@ const Navbar = (props: any) => {
             flexGrow: 1,
             alignItems: "center",
           }}>
-            <Link color="inherit" to="/">
+            <Button color="inherit" LinkComponent={NavLink} {...({ to: "/" })} sx={{ textTransform: 'capitalize' }}>
               <Typography variant="h6" component="div">{appName}</Typography>
-            </Link>
+            </Button>
             {title && (<>
               <pre> - </pre>
               <Typography variant="subtitle1" component="div">{title}</Typography>

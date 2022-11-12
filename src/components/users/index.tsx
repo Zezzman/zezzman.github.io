@@ -11,4 +11,7 @@ export default {
     show: UserShow,
     icon: PeopleIcon,
     recordRepresentation: (record: any) => `${record.name} (${record.role})`,
+    dataProvider: {},
+    authProvider: {},
+    i18nProvider: {},
 };
